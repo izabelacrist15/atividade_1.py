@@ -34,7 +34,7 @@ def draw_tree(root, filename="tree"):
 
 
 def build_fixed_expression_tree():
-    # Nós folhas
+ 
     n7 = Node(7)
     n3 = Node(3)
     n5 = Node(5)
@@ -70,7 +70,7 @@ def build_random_expression_tree():
     operands = [str(random.randint(1, 20)) for _ in range(4)]
     operators = random.sample(["+", "-", "*", "/"], 3)
 
-    # Montar uma árvore simples
+
     n1, n2, n3, n4 = map(Node, operands)
 
     op1 = Node(operators[0])
@@ -91,7 +91,7 @@ def build_random_expression_tree():
 
 
 if __name__ == "__main__":
-    # Árvore fixa
+
     fixed_tree = build_fixed_expression_tree()
     draw_tree(fixed_tree, "arvore_fixa")
 
